@@ -1,0 +1,7 @@
+@import './lib/variables';
+@import "../node_modules/normalize.css/normalize.css";
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: $font-size;
+}
