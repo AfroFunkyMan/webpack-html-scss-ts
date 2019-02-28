@@ -13,8 +13,42 @@
         color: #020202;
     }
 
+    p {
+        font-style: italic;
+        font-size: 20px;
+        color: #818182;
+        text-align: center;
+        padding-bottom:  10px;
+    }
+
     .badges {
         font-style: italic;
-        color: red;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    div.badges-green {
+        height: 150px;
+        width: 30%;
+        margin: 5px;
+        border: 2px solid #6CC72E;
+        border-radius: 50px 50px;
+        text-align: center;
+        color: white;
+        background:  #6CC72E;
+    }
+
+    div.badges-purple {
+        height: 150px;
+        width: 30%;
+        margin: 5px;
+        border: 2px solid #283583;
+        border-radius: 50px 50px;
+        color: white;
+        background-color: #283583;
     }
 }

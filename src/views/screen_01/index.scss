@@ -22,13 +22,16 @@
                 flex-direction: row;
                 list-style-type: none;
             }
-                li {
-                    color: green;
+                em {
+                    border: 2px solid red;
+                    border-radius: 50px;
+                    background-color: red;
+                    color: white;
                 }
         }
 
         h1 {
-            color: blue;
+            color: #4998EB;
             line-height: 80px;
             font-size: 82px;
             span {

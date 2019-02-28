@@ -1,0 +1,47 @@
+.CostServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+    font-style: italic;
+    font-weight: 300;
+    line-height: 32px;
+    font-size: 50px;
+    text-align: center;
+    color: #020202;
+    }
+
+    p {
+        font-style: italic;
+        font-size: 30px;
+        color: #818182;
+        text-align: center;
+        padding-bottom:  25px;
+        border: 2px solid #4998EB;
+        border-radius: 15px;
+        background-color: #4998EB;
+        color: white;
+    }
+
+    .BottomCost {
+        display: flex;
+    }
+
+    div.cleaning-price {
+        border: 2px solid pink;
+        border-radius: 20px 20px;
+        color: white;
+        background-color: #EB5B49;
+        text-align: center;
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 35px;
+        font-size: 24px;
+    }
+
+    i {
+        font-size: 30px;
+    }
+}
