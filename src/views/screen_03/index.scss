@@ -1,4 +1,4 @@
-.CostServices {
+.cost-services {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +15,6 @@
     p {
         font-style: italic;
         font-size: 30px;
-        color: #818182;
         text-align: center;
         padding-bottom:  25px;
         border: 2px solid #4998EB;
@@ -24,7 +23,7 @@
         color: white;
     }
 
-    .BottomCost {
+    .bottom-cost {
         display: flex;
     }
 
@@ -42,6 +41,7 @@
     }
 
     i {
-        font-size: 30px;
+        font-size: 20px;
+        text-align: center;
     }
 }

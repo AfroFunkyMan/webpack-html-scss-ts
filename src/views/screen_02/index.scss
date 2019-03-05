@@ -41,7 +41,8 @@
         color: white;
         background:  #6CC72E;
         text-align: center;
-        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 70px;
     }
 
     div.badges-purple {
@@ -52,5 +53,8 @@
         border-radius: 50px 50px;
         color: white;
         background-color: #283583;
+        text-align: center;
+        font-weight: 500;
+        line-height: 80px;
     }
 }
