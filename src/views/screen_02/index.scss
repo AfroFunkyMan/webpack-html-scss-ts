@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
+    justify-content: center;
 
     h3 {
         font-style: italic;
@@ -37,9 +38,10 @@
         margin: 5px;
         border: 2px solid #6CC72E;
         border-radius: 50px 50px;
-        text-align: center;
         color: white;
         background:  #6CC72E;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     div.badges-purple {
