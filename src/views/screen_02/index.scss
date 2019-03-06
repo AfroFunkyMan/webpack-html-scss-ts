@@ -1,60 +1,57 @@
 .services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+
+  h3 {
+    font-style: italic;
+    font-weight: 300;
+    line-height: 32px;
+    font-size: 48px;
+    text-align: center;
+    color: #020202;
+  }
+
+  p {
+    font-style: italic;
+    font-size: 20px;
+    color: #818182;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .badges {
+    font-style: italic;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-transform: uppercase;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
 
-    h3 {
-        font-style: italic;
-        font-weight: 300;
-        line-height: 32px;
-        font-size: 48px;
-        text-align: center;
-        color: #020202;
-    }
+    div {
+      height: 150px;
+      width: 30%;
+      margin: 5px;
+      border: 2px solid #6CC72E;
+      border-radius: 50px 50px;
+      color: white;
+      background: #6CC72E;
+      text-align: center;
+      font-weight: 500;
+      line-height: 70px;
 
-    p {
-        font-style: italic;
-        font-size: 20px;
-        color: #818182;
-        text-align: center;
-        padding-bottom:  10px;
-    }
-
-    .badges {
-        font-style: italic;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    div.badges-green {
-        height: 150px;
-        width: 30%;
-        margin: 5px;
+      &.badges-green {
         border: 2px solid #6CC72E;
-        border-radius: 50px 50px;
-        color: white;
-        background:  #6CC72E;
-        text-align: center;
-        font-weight: 500;
-        line-height: 70px;
-    }
+        background: #6CC72E;
+      }
 
-    div.badges-purple {
-        height: 150px;
-        width: 30%;
-        margin: 5px;
+      &.badges-purple {
         border: 2px solid #283583;
-        border-radius: 50px 50px;
-        color: white;
         background-color: #283583;
-        text-align: center;
-        font-weight: 500;
-        line-height: 80px;
+      }
     }
+  }
 }
