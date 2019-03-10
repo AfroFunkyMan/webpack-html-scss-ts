@@ -1,77 +1,113 @@
 @import "../../lib/base-classes";
+@import "../../lib/media-responde";
+@import "../../lib/variables";
+
+$logo-size-width: 86px;
+$logo-size-height: $logo-size-width / 1.26;
 
 .welcome {
   @extend %flex-column;
-  height: 100vh;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  font-style: italic;
-  font-weight: 300;
-  text-align: center;
+  height: calc(100vh - 20px);
+  padding: 10px;
 
   &__navbar {
     @extend %flex-row;
-    justify-content: center;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-between;
+    @include respond-to(unmobile) { justify-content: stretch;}
+
+    &__logo {
+      background: white url("/assets/img/logo.png") no-repeat center center;
+      background-size: cover;
+      width: $logo-size-width;
+      height: $logo-size-height;
+    }
 
     &__nav-list {
-      @extend %flex-row;
-      justify-content: center;
-
-      ul {
-        @extend %flex-row;
-        justify-content: space-around;
-        list-style-type: none;
+      @include respond-to(unmobile) { flex: 1;}
+      &__icon {
+        background: url("/assets/img/bars-solid.svg") no-repeat center center;
+        background-size: cover;
+        width: 2rem;
+        height: 2rem;
+        @include respond-to(unmobile) { display: none;}
       }
-      em {
-        border: 2px solid red;
-        border-radius: 50px;
-        background-color: red;
-        color: white;
+
+      &__list {
+        @extend %flex-row;
+        display: none;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        font-size: 1rem;
+        @include respond-to(unmobile) {
+          flex: 1;
+          display: flex;
+        }
+        li {
+          flex: 1;
+          font-style: italic;
+          font-weight: 300;
+          text-align: center;
+        }
+        em {
+          border: 2px solid red;
+          border-radius: 50px;
+          background-color: red;
+          color: white;
+        }
       }
     }
   }
 
   &__slogan {
     @extend %flex-column;
-
+    align-items: center;
+    font-size: 1rem;
+    font-style: italic;
     h1 {
-      color: #4998EB;
-      line-height: 80px;
-      font-size: 82px;
-
+      font-weight: lighter;
+      color: #4998eb;
+      text-align: center;
       span {
         font-style: normal;
-        font-size: 82px;
-        line-height: 80px;
-        font-weight: 900;
-        color: #6CC72E;
+        font-weight: bold;
+        color: #6cc72e;
       }
     }
 
     p {
       color: #818182;
-      line-height: 35px;
       margin: 0 20px;
-      font-size: 32px;
+      font-size: 1rem;
       text-align: center;
     }
   }
 
   &__description {
-    margin-bottom: 30px;
+    @extend %flex-column;
+    justify-content: stretch;
+    align-items: stretch;
+    flex: auto;
 
     &__man-img {
-      height: 30vh;
+      background: url("/assets/img/men.png") no-repeat center bottom;
+      background-size: contain;
+      margin-top:20px;
+      flex: auto;
     }
 
     &__text {
+      font-family: $font-family;
+      font-style: italic;
+      font-weight: lighter;
+      line-height: 1rem;
+      font-size: 1rem;
+      text-align: center;
       border: 1px solid #979797;
       border-radius: 50px;
-      padding: 0 30px;
-      margin: -10px 30px 0 30px;
+      padding: 0 10px;
     }
   }
-
 }
