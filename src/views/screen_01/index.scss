@@ -23,6 +23,7 @@ $logo-size-height: $logo-size-width / 1.26;
       height: $logo-size-height;
     }
 
+<<<<<<< HEAD
     &__nav-list {
       @include respond-to(unmobile) { flex: 1;}
       &__icon {
@@ -44,6 +45,35 @@ $logo-size-height: $logo-size-width / 1.26;
         @include respond-to(unmobile) {
           flex: 1;
           display: flex;
+=======
+    &-title {
+         .nav {
+        display: flex;
+        justify-content: center;
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                list-style-type: none;
+            }
+                li {
+                    color: green;
+                }
+        }
+
+        h1 {
+            color: blue;
+            line-height: 80px;
+            font-size: 82px;
+            span {
+                font-style: normal;
+                font-size: 82px;
+                line-height: 80px;
+                font-weight: 900;
+                color: #6CC72E;
+            }
+>>>>>>> parent of 6f141ea... initial commit
         }
         li {
           flex: 1;
